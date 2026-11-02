@@ -1856,6 +1856,7 @@ with tab2:
                     df_features = df_processed[feature_order].copy()
 
                     num_cols = ['CreditScore', 'Age', 'Tenure', 'Balance', 'EstimatedSalary']
+                    df_features[num_cols] = df_features[num_cols].astype(float)
                     df_features.loc[:, num_cols] = scaler.transform(df_features[num_cols])
 
                     predictions = model.predict(df_features)
