@@ -12,13 +12,8 @@ from groq import Groq
 # =====================================================================
 # 🎃 HAUNTED CHURN ORACLE — Halloween Edition 🎃
 # 1) A ghost GATE asks "Do you really want to predict?"
-#    -> The NO button RUNS AWAY from your cursor. Only YES works.
 # 2) Inside: spooky tantra/occult vibes (rotating ritual mandala,
 #    candles, bats, fog, full moon).
-# 3) A ghost WATCHES you while you type (its eyes follow your cursor).
-# 4) Prediction -> the original black Death Note opens and writes both pages;
-#    its right-page flower/grave illustration is replaced by the churn meter.
-#    Huddy Buddy appears only for a churn prediction; safe results have no rain.
 # =====================================================================
 
 st.set_page_config(
@@ -536,7 +531,7 @@ div[data-baseweb="tab-highlight"] { background-color: #FF6B1A !important; }
 
 /* --- ⚰️ CSV upload = The Coffin of Souls portal --- */
 .st-key-csv_coffin {
-    position: relative; overflow: hidden; isolation: isolate;
+    position: relative; overflow: visible;
     border: 1px solid rgba(190,139,255,.72); border-radius: 24px;
     padding: 20px 20px 16px 20px; margin: 8px 0 18px 0;
     background:
